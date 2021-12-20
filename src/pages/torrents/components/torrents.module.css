@@ -1,0 +1,36 @@
+.list {
+  padding: 16px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  flex: 1;
+  list-style-type: none;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background-color: #0001;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #13183f;
+}
+
+.description {
+  font-size: 14px;
+  color: #2e3149;
+}

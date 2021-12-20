@@ -1,0 +1,31 @@
+{
+  "name": "qBittorent Series Renamer",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "This extension was created with the awesome extensionizr.com",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "page action demo"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.themoviedb.org/*", "https://www.imdb.com/*"],
+      "js": ["dist/main.js"],
+      "css": ["dist/assets/main.css"]
+    }
+  ],
+  "host_permissions": ["http://localhost:*/*"]
+}

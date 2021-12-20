@@ -1,0 +1,24 @@
+{
+  "incremental": true,
+  "lineWidth": 120,
+  "indentWidth": 2,
+  "typescript": {
+    "quoteStyle": "preferSingle",
+    "semiColons": "asi",
+    "trailingCommas": "onlyMultiLine",
+    "jsx.quoteStyle": "preferSingle"
+  },
+  "json": {
+  },
+  "includes": ["**/*.{ts,tsx,js,jsx,cjs,mjs,json,css}"],
+  "excludes": [
+    "**/node_modules",
+    "**/*-lock.json",
+    "**/dist"
+  ],
+  "plugins": [
+    "https://plugins.dprint.dev/typescript-0.59.2.wasm",
+    "https://plugins.dprint.dev/json-0.13.2.wasm",
+    "https://plugins.dprint.dev/prettier-0.4.0.exe-plugin@2a38bff5dff736cb53195a93d6a15a6281580205dfb0552ca0562bac8b3fc065"
+  ]
+}
